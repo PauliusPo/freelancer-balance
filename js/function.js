@@ -4,4 +4,4 @@ renderMonths(target, data) {
         MonthHTML += `<div class="table-content">
                     <div class="months-name"${data[i].months}>`
 };
-}
+}...
