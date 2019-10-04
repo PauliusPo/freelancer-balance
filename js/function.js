@@ -1,11 +1,13 @@
 function renderTable(target, data) {
     let accountHTML = '';
-    let balance = "";
+    // let balanceHTML = '';
     for ( let i=0; i<data.length ; i++){
-        if  (typeof(data[i].income) == undefined) {
-            data[i].income = 0;
-            (typeof(data[i].expense) == undefined) 
-                data[i].expense = 0;
+        if  (typeof(data[i].income) == 'undefined') {
+            data[i].income = '0';
+        if (typeof(data[i].expense) == 'undefined')  
+            data[i].expense = '0';
+            
+             
         }
         
         accountHTML += `<div class="table-row">
@@ -16,13 +18,14 @@ function renderTable(target, data) {
                         <div class="cell">${data[i].income - data[i].expense}Eur</div>
                         </div>`;
                         
-                                     
+       
+                      
 
     } 
     return document.querySelector(target).innerHTML = accountHTML;
 }
 
-
+ // balanceHTML += `<div class="cell">${data[i]+({data[i].income - data[i].expense})}Eur</div>
 
 // jeigu income !== skaicius, tada duok man 0;
 
