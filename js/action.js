@@ -1,2 +1,2 @@
-renderTableContent('.table-content .months-name', months );
-render
+renderTable('.table-content', account );
+
