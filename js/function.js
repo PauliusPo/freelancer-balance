@@ -27,7 +27,7 @@ function renderTable(target, data) {
 
  // balanceHTML += `<div class="cell">${data[i]+({data[i].income - data[i].expense})}Eur</div>
 
-// jeigu income !== skaicius, tada duok man 0;
+// jeigu income !== skaicius, tada duok  0;
 
    // }
         // if (!data[i].income && data[i].expense) {
